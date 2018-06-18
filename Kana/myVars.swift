@@ -10,13 +10,13 @@ import Foundation
 import UIKit
 
 
-class myVars {
+ class myVars {
     
     var kanaType: String = "h_"
     var thisFrame: CGRect
     init(){
         kanaType = "h_"
-        thisFrame = CGRect(x: 0, y: 0, width: 200, height: 200)
+        thisFrame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.width)
     }
     
     func getKanaType()->String{

@@ -11,7 +11,7 @@ import AudioToolbox
 import UIKit
 
 class kanaBttn : UIButton {
-    
+  //  let access = AppDelegate.mAccess
     //HUGELY IMPORTANT!!! defines the image & sound
     var syllable: String = "a"
     var pronounced: String = "AWE"
@@ -44,17 +44,14 @@ class kanaBttn : UIButton {
     
     
      func commonInit() {
-        
-       
-        
-        
+
         //Where the button jumps to
         var goX: CGFloat
         var goY: CGFloat
 
         //Create spacing between buttons
-        let divide: CGFloat = (access.thisFrame.width)/5
-        let divideY: CGFloat = (access.thisFrame.height-50)/12
+        let divide: CGFloat = (UIScreen.main.bounds.width)/5
+        let divideY: CGFloat = (UIScreen.main.bounds.height-60)/11  //(access.thisFrame.height-50)/10
         
         let adjust: CGFloat = divide/2
         
@@ -119,8 +116,8 @@ class kanaBttn : UIButton {
         
         
         //This timer will call an update to move everything into position
-        _ = Timer.scheduledTimer(timeInterval: 0.4, target: self, selector: #selector(UIMenuController.update), userInfo: nil, repeats: false)
-        
+        _ = Timer.scheduledTimer(timeInterval: 0.4, target: self, selector: #selector(update), userInfo: nil, repeats: false)
+
         
         
         //
@@ -282,9 +279,9 @@ class kanaBttn : UIButton {
         
     }
     
-    func update(){
+    @objc func update(){
         //Update the image, for changing from Hirigana to Katakana
-        var imgLbl: String = access.kanaType//"k_"
+        var imgLbl: String = UserDefaults.standard.string(forKey: "kanaType")!//access.kanaType//"k_"
         imgLbl.append(syllable)
         imgLbl.append(".png")
         print(imgLbl, "umm_\(syllable)")
@@ -298,7 +295,7 @@ class kanaBttn : UIButton {
         
     }
     
-    func stopHighlight(){
+    @objc func stopHighlight(){
       // self.highlighted = false
       //  self.tintColor = UIColor.whiteColor()
         UIView.animate(withDuration: 0.8, delay: 0, options: UIViewAnimationOptions.curveEaseIn, animations: { self.tintColor = UIColor.white }, completion: nil)
@@ -322,25 +319,19 @@ class kanaBttn : UIButton {
     }
     
     //if the button is touched, play a sound
-    func touchedSet(sender: UIButton!) {
+
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         
         self.tintColor = UIColor.red
-        _ = Timer.scheduledTimer(timeInterval: 0.4, target: self, selector: Selector(("stopHighlight")), userInfo: nil, repeats: false)
-       
-        
-        
+        _ = Timer.scheduledTimer(timeInterval: 0.4, target: self, selector: #selector(stopHighlight), userInfo: nil, repeats: false)
+ 
         print(syllable)
-        
         
         if let soundURL = Bundle.main.url(forResource: syllable, withExtension: "wav") {
             var mySound: SystemSoundID = 0
             AudioServicesCreateSystemSoundID(soundURL as CFURL, &mySound)
             // Play
             AudioServicesPlaySystemSound(mySound);
-
+        }
     }
-    
-    }
-
-
 }

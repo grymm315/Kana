@@ -6,8 +6,8 @@
 //  Copyright © 2015 Mad Men of Super Science, LLC. All rights reserved.
 //
 
-var access = myVars()
-var events = EventManager()
+//var access = myVars()
+//var events = EventManager()
 
 import UIKit
 import AudioToolbox
@@ -16,9 +16,11 @@ import AudioToolbox
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    
 
     private func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+        
+       
         
         if let soundURL = Bundle.main.url(forResource: "Appear", withExtension: "wav") {
             var mySound: SystemSoundID = 0
