@@ -6,4 +6,3 @@
 //  Copyright © 2015 Mad Men of Super Science, LLC. All rights reserved.
 //
 
-import Foundation

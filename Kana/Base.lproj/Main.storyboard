@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="2Qb-8K-wPP">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="2Qb-8K-wPP">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Draw View Controller-->
         <scene sceneID="rih-o5-ZgJ">
             <objects>
-                <viewController id="2Qb-8K-wPP" sceneMemberID="viewController">
+                <viewController id="2Qb-8K-wPP" customClass="DrawViewController" customModule="Kana" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cFK-9O-oTM"/>
                         <viewControllerLayoutGuide type="bottom" id="Lsr-z7-kL3"/>
@@ -24,20 +24,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K6a-bu-jbA">
-                                <rect key="frame" x="163" y="81" width="74" height="69"/>
+                                <rect key="frame" x="262" y="568" width="74" height="69"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="back-03.png"/>
                                 <connections>
                                     <segue destination="S4R-Ja-viH" kind="presentation" id="AuB-aB-zyD"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Sar-it-gEU">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="560"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="drawView" destination="Sar-it-gEU" id="k5Q-9s-JNo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l7y-PV-Uvt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="221" y="23"/>
+            <point key="canvasLocation" x="220" y="22.938530734632685"/>
         </scene>
         <!--Phoneme View Controller-->
         <scene sceneID="snT-py-3hH">
@@ -71,7 +78,7 @@
                                 </constraints>
                                 <state key="normal" title="listen" backgroundImage="circle-01.png"/>
                                 <connections>
-                                    <action selector="record:" destination="S4R-Ja-viH" eventType="touchUpInside" id="anp-7c-KZn"/>
+                                    <action selector="listen:" destination="S4R-Ja-viH" eventType="touchUpInside" id="TNR-6Q-T0C"/>
                                 </connections>
                             </button>
                         </subviews>

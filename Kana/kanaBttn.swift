@@ -9,6 +9,7 @@
 import Foundation
 import AudioToolbox
 import UIKit
+import NotificationCenter
 
 class kanaBttn : UIButton {
   //  let access = AppDelegate.mAccess
@@ -23,12 +24,13 @@ class kanaBttn : UIButton {
     
     
     //
-    convenience init(str: String) {
+    convenience init(str: String, soundsLike: String) {
         
         //Initialize the frame
         self.init(frame: CGRect.zero)
         self.frame = CGRect(origin: CGPoint(x: 0, y: 0), size: mySize)
-    
+        pronounced = soundsLike
+        NotificationCenter.default.addObserver(self, selector: #selector(wasHeard) , name: NSNotification.Name(rawValue: pronounced), object: nil)
         //Pass the string into the syllable
         syllable = str
 
@@ -51,7 +53,7 @@ class kanaBttn : UIButton {
 
         //Create spacing between buttons
         let divide: CGFloat = (UIScreen.main.bounds.width)/5
-        let divideY: CGFloat = (UIScreen.main.bounds.height-60)/11  //(access.thisFrame.height-50)/10
+        let divideY: CGFloat = (UIScreen.main.bounds.height-90)/11  //(access.thisFrame.height-50)/10
         
         let adjust: CGFloat = divide/2
         
@@ -301,10 +303,11 @@ class kanaBttn : UIButton {
         UIView.animate(withDuration: 0.8, delay: 0, options: UIViewAnimationOptions.curveEaseIn, animations: { self.tintColor = UIColor.white }, completion: nil)
     }
     
-    func wasHeard(){
+    @objc func wasHeard(){
         
         self.tintColor = UIColor.red
-                stopHighlight()
+               // stopHighlight()
+         _ = Timer.scheduledTimer(timeInterval: 0.4, target: self, selector: #selector(stopHighlight), userInfo: nil, repeats: false)
         
     }
     //move the button offscreen

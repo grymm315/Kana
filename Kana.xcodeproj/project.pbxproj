@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		F02867381BED5A1B00BF3EC7 /* myVars.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02867371BED5A1B00BF3EC7 /* myVars.swift */; };
 		F028673A1BED723800BF3EC7 /* PhonemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02867391BED723800BF3EC7 /* PhonemeViewController.swift */; };
+		F030D23020D775C300DA18A1 /* Slt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F030D22D20D775BC00DA18A1 /* Slt.framework */; };
+		F030D23120D775C400DA18A1 /* AcousticModelEnglish.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F030D22E20D775BD00DA18A1 /* AcousticModelEnglish.bundle */; };
+		F030D23220D775C400DA18A1 /* OpenEars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F030D22F20D775C300DA18A1 /* OpenEars.framework */; };
+		F030D23420DF528200DA18A1 /* DrawViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F030D23320DF528200DA18A1 /* DrawViewController.swift */; };
 		F085766720D5BF9E005488A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F085766620D5BF9E005488A0 /* AppDelegate.swift */; };
 		F085766920D5BF9E005488A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F085766820D5BF9E005488A0 /* ViewController.swift */; };
 		F085766C20D5BF9E005488A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F085766A20D5BF9E005488A0 /* Main.storyboard */; };
@@ -183,20 +187,20 @@
 		F09B0A761BE2C67D003E5C30 /* pause-02.png in Resources */ = {isa = PBXBuildFile; fileRef = F09B0A721BE2C67D003E5C30 /* pause-02.png */; };
 		F09B0A771BE2C67D003E5C30 /* quizbtn-06.png in Resources */ = {isa = PBXBuildFile; fileRef = F09B0A731BE2C67D003E5C30 /* quizbtn-06.png */; };
 		F09B0A791BE2D6C6003E5C30 /* kanaBttn.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09B0A781BE2D6C6003E5C30 /* kanaBttn.swift */; };
-		F09B4B791C0556EB00FEF7AF /* AcousticModelEnglish.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F09B4B781C0556EB00FEF7AF /* AcousticModelEnglish.bundle */; };
-		F09B4B7B1C05575F00FEF7AF /* AcousticModelVowels.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F09B4B7A1C05575F00FEF7AF /* AcousticModelVowels.bundle */; };
 		F09B4B7D1C055C6F00FEF7AF /* prounonce.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09B4B7C1C055C6F00FEF7AF /* prounonce.swift */; };
 		F0F6C0FD1BF55C8D001BF952 /* boomBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F6C0FC1BF55C8D001BF952 /* boomBox.swift */; };
 		F0F6C0FF1BF55D9C001BF952 /* wawish.wav in Resources */ = {isa = PBXBuildFile; fileRef = F0F6C0FE1BF55D9C001BF952 /* wawish.wav */; };
 		F0F6C1011BF728DC001BF952 /* events.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0F6C1001BF728DC001BF952 /* events.swift */; };
 		F0F6C1031BFDAF9A001BF952 /* Appear.wav in Resources */ = {isa = PBXBuildFile; fileRef = F0F6C1021BFDAF9A001BF952 /* Appear.wav */; };
-		F0F6C10B1BFDDBE8001BF952 /* OpenEars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0F6C1071BFDDBE8001BF952 /* OpenEars.framework */; };
-		F0F6C10C1BFDDBE9001BF952 /* Slt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0F6C1081BFDDBE8001BF952 /* Slt.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F02867371BED5A1B00BF3EC7 /* myVars.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myVars.swift; sourceTree = "<group>"; };
 		F02867391BED723800BF3EC7 /* PhonemeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhonemeViewController.swift; path = ../PhonemeViewController.swift; sourceTree = "<group>"; };
+		F030D22D20D775BC00DA18A1 /* Slt.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Slt.framework; sourceTree = "<group>"; };
+		F030D22E20D775BD00DA18A1 /* AcousticModelEnglish.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AcousticModelEnglish.bundle; sourceTree = "<group>"; };
+		F030D22F20D775C300DA18A1 /* OpenEars.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OpenEars.framework; sourceTree = "<group>"; };
+		F030D23320DF528200DA18A1 /* DrawViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawViewController.swift; sourceTree = "<group>"; };
 		F085766420D5BF9E005488A0 /* KanaUpdate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KanaUpdate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F085766620D5BF9E005488A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F085766820D5BF9E005488A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -382,15 +386,11 @@
 		F09B4B721BFE8E2700FEF7AF /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		F09B4B741BFE8E3100FEF7AF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		F09B4B771BFE902300FEF7AF /* Bridging_Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bridging_Header.h; sourceTree = "<group>"; };
-		F09B4B781C0556EB00FEF7AF /* AcousticModelEnglish.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AcousticModelEnglish.bundle; sourceTree = "<group>"; };
-		F09B4B7A1C05575F00FEF7AF /* AcousticModelVowels.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AcousticModelVowels.bundle; sourceTree = "<group>"; };
 		F09B4B7C1C055C6F00FEF7AF /* prounonce.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = prounonce.swift; sourceTree = "<group>"; };
 		F0F6C0FC1BF55C8D001BF952 /* boomBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = boomBox.swift; path = ../boomBox.swift; sourceTree = "<group>"; };
 		F0F6C0FE1BF55D9C001BF952 /* wawish.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = wawish.wav; sourceTree = "<group>"; };
 		F0F6C1001BF728DC001BF952 /* events.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = events.swift; sourceTree = "<group>"; };
 		F0F6C1021BFDAF9A001BF952 /* Appear.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Appear.wav; sourceTree = "<group>"; };
-		F0F6C1071BFDDBE8001BF952 /* OpenEars.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OpenEars.framework; sourceTree = "<group>"; };
-		F0F6C1081BFDDBE8001BF952 /* Slt.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Slt.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -405,8 +405,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0F6C10C1BFDDBE9001BF952 /* Slt.framework in Frameworks */,
-				F0F6C10B1BFDDBE8001BF952 /* OpenEars.framework in Frameworks */,
+				F030D23020D775C300DA18A1 /* Slt.framework in Frameworks */,
+				F030D23220D775C400DA18A1 /* OpenEars.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,6 +458,7 @@
 				F09B4B7C1C055C6F00FEF7AF /* prounonce.swift */,
 				F02867371BED5A1B00BF3EC7 /* myVars.swift */,
 				F09B0A781BE2D6C6003E5C30 /* kanaBttn.swift */,
+				F030D23320DF528200DA18A1 /* DrawViewController.swift */,
 				F02867391BED723800BF3EC7 /* PhonemeViewController.swift */,
 				F09B09011BE2C211003E5C30 /* Main.storyboard */,
 				F09B09041BE2C211003E5C30 /* Assets.xcassets */,
@@ -709,12 +710,11 @@
 		F0F6C1041BFDDBE8001BF952 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
-				F09B4B7A1C05575F00FEF7AF /* AcousticModelVowels.bundle */,
-				F09B4B781C0556EB00FEF7AF /* AcousticModelEnglish.bundle */,
+				F030D22E20D775BD00DA18A1 /* AcousticModelEnglish.bundle */,
+				F030D22F20D775C300DA18A1 /* OpenEars.framework */,
+				F030D22D20D775BC00DA18A1 /* Slt.framework */,
 				F09B4B721BFE8E2700FEF7AF /* AudioToolbox.framework */,
 				F09B4B741BFE8E3100FEF7AF /* AVFoundation.framework */,
-				F0F6C1071BFDDBE8001BF952 /* OpenEars.framework */,
-				F0F6C1081BFDDBE8001BF952 /* Slt.framework */,
 			);
 			path = Framework;
 			sourceTree = "<group>";
@@ -772,6 +772,7 @@
 					};
 					F09B08F51BE2C210003E5C30 = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 8L898E2ZQE;
 					};
 				};
 			};
@@ -874,7 +875,7 @@
 				F09B0A4E1BE2C640003E5C30 /* k_ku.png in Resources */,
 				F09B0A591BE2C640003E5C30 /* k_nu.png in Resources */,
 				F09B09921BE2C52C003E5C30 /* ta.wav in Resources */,
-				F09B4B791C0556EB00FEF7AF /* AcousticModelEnglish.bundle in Resources */,
+				F030D23120D775C400DA18A1 /* AcousticModelEnglish.bundle in Resources */,
 				F09B097F1BE2C52C003E5C30 /* na.wav in Resources */,
 				F09B09EC1BE2C5CC003E5C30 /* h_i.png in Resources */,
 				F09B0A611BE2C640003E5C30 /* k_se.png in Resources */,
@@ -975,7 +976,6 @@
 				F09B09B21BE2C5B3003E5C30 /* back-03.png in Resources */,
 				F09B0A081BE2C5CC003E5C30 /* h_ta.png in Resources */,
 				F09B09F21BE2C5CC003E5C30 /* h_ma.png in Resources */,
-				F09B4B7B1C05575F00FEF7AF /* AcousticModelVowels.bundle in Resources */,
 				F09B09EB1BE2C5CC003E5C30 /* h_hu.png in Resources */,
 				F09B09831BE2C52C003E5C30 /* nu.wav in Resources */,
 				F09B099A1BE2C52C003E5C30 /* ya.wav in Resources */,
@@ -999,6 +999,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F030D23420DF528200DA18A1 /* DrawViewController.swift in Sources */,
 				F09B4B7D1C055C6F00FEF7AF /* prounonce.swift in Sources */,
 				F0F6C1011BF728DC001BF952 /* events.swift in Sources */,
 				F0F6C0FD1BF55C8D001BF952 /* boomBox.swift in Sources */,
@@ -1206,6 +1207,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8L898E2ZQE;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Kana/Framework",
@@ -1221,6 +1223,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8L898E2ZQE;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Kana/Framework",
