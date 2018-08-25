@@ -43,6 +43,14 @@
                                     <action selector="clearView:" destination="2Qb-8K-wPP" eventType="touchUpInside" id="Dlq-KX-89W"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SYt-qq-EiS">
+                                <rect key="frame" x="38" y="599" width="45" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Popup"/>
+                                <connections>
+                                    <action selector="PopButton:" destination="2Qb-8K-wPP" eventType="touchUpInside" id="niw-dc-jBS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>

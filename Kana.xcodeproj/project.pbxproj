@@ -434,7 +434,6 @@
 		F09B08ED1BE2C210003E5C30 = {
 			isa = PBXGroup;
 			children = (
-				F0849C5F20F2C13E0030CB26 /* Dot.swift */,
 				F09B08F81BE2C210003E5C30 /* Kana */,
 				F09B09111BE2C211003E5C30 /* KanaTests */,
 				F09B091C1BE2C211003E5C30 /* KanaUITests */,
@@ -458,6 +457,7 @@
 				F09B092B1BE2C4AB003E5C30 /* Resources */,
 				F09B08F91BE2C211003E5C30 /* AppDelegate.swift */,
 				F0F6C1001BF728DC001BF952 /* events.swift */,
+				F0849C5F20F2C13E0030CB26 /* Dot.swift */,
 				F09B4B771BFE902300FEF7AF /* Bridging_Header.h */,
 				F0F6C0FC1BF55C8D001BF952 /* boomBox.swift */,
 				F09B4B7C1C055C6F00FEF7AF /* prounonce.swift */,
@@ -1152,7 +1152,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_OBJC_BRIDGING_HEADER = /Users/Grymm/Kana/Kana/Bridging_Header.h;
+				SWIFT_OBJC_BRIDGING_HEADER = $PROJECT_DIR/Kana/Bridging_Header.h;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1203,7 +1203,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OBJC_BRIDGING_HEADER = /Users/Grymm/Kana/Kana/Bridging_Header.h;
+				SWIFT_OBJC_BRIDGING_HEADER = $PROJECT_DIR/Kana/Bridging_Header.h;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

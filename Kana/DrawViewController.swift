@@ -19,15 +19,33 @@ class DrawViewController: UIViewController {
     let red:CGFloat = 255
     let green:CGFloat = 255
     let blue:CGFloat = 255
-    
+    let pop = PopUp()
     var stroke:CGFloat = 10.0
+    
+    let alphabet = ["a", "i", "u", "e", "o",
+                    "ka", "ki", "ku", "ke", "ko",
+                    "sa", "si", "su", "se", "so",
+                    "ta", "ti", "tu", "te", "to",
+                    "na", "ni", "nu", "ne", "no",
+                    "ha", "hi", "hu", "he", "ho",
+                    "ma", "mi", "mu", "me", "mo",
+                    "ya", "yu", "yo",
+                    "ra", "ri", "ru", "re", "ro",
+                    "wa", "wo",
+                    "n"]
   
-//    override func viewDidLoad() {
-//
-//    }
+    override func viewDidLoad() {
+        pop.mData = alphabet
+    }
     func clear(){
         self.drawView.image = nil
         
+    }
+    
+    @IBAction func PopButton(_ sender: Any) {
+        let but = sender as! UIButton
+        pop.startFrame = but.frame
+        self.view.addSubview(pop.view)
     }
     
     @IBAction func clearView(_ sender: Any) {

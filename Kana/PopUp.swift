@@ -24,7 +24,6 @@ class PopUp: UIViewController, UITableViewDelegate, UITableViewDataSource {
     override func viewDidLoad() {
         print("ViewDidLoad")
         super.viewDidLoad()
-        mCarrier.scanForDevice(time: 4.0)
         closing = false
        
         tableView.frame = startFrame
@@ -34,12 +33,14 @@ class PopUp: UIViewController, UITableViewDelegate, UITableViewDataSource {
         tableView.layer.cornerRadius = 12
         tableView.layer.borderWidth = 0.5
         tableView.layer.borderColor = UIColor.lightGray.cgColor
+        tableView.backgroundColor = UIColor.black
+        //tableView.
         
         cancel.frame = startFrame
         cancel.setTitle("Cancel", for: UIControlState.normal)
-        cancel.setTitleColor(UIColor.blue, for: .normal)
+        cancel.setTitleColor(UIColor.white, for: .normal)
         cancel.isEnabled = true
-        cancel.backgroundColor = UIColor.white
+        cancel.backgroundColor = UIColor.black
         cancel.layer.cornerRadius = 12
         cancel.layer.borderWidth = 0.5
         cancel.layer.borderColor = UIColor.lightGray.cgColor
@@ -91,7 +92,6 @@ class PopUp: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
         //self.tableView.reloadData()
         
-        mCarrier.scanForDevice(time: 2.0)
         
         UIApplication.shared.isNetworkActivityIndicatorVisible = true
         
@@ -121,18 +121,16 @@ class PopUp: UIViewController, UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cellThis = tableView.dequeueReusableCell(withIdentifier: "basic", for: indexPath as IndexPath)
-        
-        cellThis.textLabel = mData[indexPath]
+        cellThis.backgroundColor = UIColor.black
+        cellThis.textLabel?.textColor = UIColor.white
+        cellThis.textLabel?.text = mData[indexPath.row]
         
         return cellThis
     }
     
      func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-     //   mCarrier.mDevice = mCarrier.deviceList[indexPath.row]
-     //   mCarrier.connect(device: mCarrier.mDevice!)
         self.removeFromParentViewController()
         self.view.removeFromSuperview()
-       //performSegue(withIdentifier: "FoundTact", sender: nil)
     }
     
 }
