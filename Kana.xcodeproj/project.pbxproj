@@ -13,6 +13,7 @@
 		F030D23120D775C400DA18A1 /* AcousticModelEnglish.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F030D22E20D775BD00DA18A1 /* AcousticModelEnglish.bundle */; };
 		F030D23220D775C400DA18A1 /* OpenEars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F030D22F20D775C300DA18A1 /* OpenEars.framework */; };
 		F030D23420DF528200DA18A1 /* DrawViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F030D23320DF528200DA18A1 /* DrawViewController.swift */; };
+		F0849C6020F2C13E0030CB26 /* Dot.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0849C5F20F2C13E0030CB26 /* Dot.swift */; };
 		F085766720D5BF9E005488A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F085766620D5BF9E005488A0 /* AppDelegate.swift */; };
 		F085766920D5BF9E005488A0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F085766820D5BF9E005488A0 /* ViewController.swift */; };
 		F085766C20D5BF9E005488A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F085766A20D5BF9E005488A0 /* Main.storyboard */; };
@@ -201,6 +202,7 @@
 		F030D22E20D775BD00DA18A1 /* AcousticModelEnglish.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AcousticModelEnglish.bundle; sourceTree = "<group>"; };
 		F030D22F20D775C300DA18A1 /* OpenEars.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OpenEars.framework; sourceTree = "<group>"; };
 		F030D23320DF528200DA18A1 /* DrawViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawViewController.swift; sourceTree = "<group>"; };
+		F0849C5F20F2C13E0030CB26 /* Dot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dot.swift; sourceTree = "<group>"; };
 		F085766420D5BF9E005488A0 /* KanaUpdate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KanaUpdate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F085766620D5BF9E005488A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F085766820D5BF9E005488A0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -430,6 +432,7 @@
 		F09B08ED1BE2C210003E5C30 = {
 			isa = PBXGroup;
 			children = (
+				F0849C5F20F2C13E0030CB26 /* Dot.swift */,
 				F09B08F81BE2C210003E5C30 /* Kana */,
 				F09B09111BE2C211003E5C30 /* KanaTests */,
 				F09B091C1BE2C211003E5C30 /* KanaUITests */,
@@ -1004,6 +1007,7 @@
 				F0F6C1011BF728DC001BF952 /* events.swift in Sources */,
 				F0F6C0FD1BF55C8D001BF952 /* boomBox.swift in Sources */,
 				F09B0A791BE2D6C6003E5C30 /* kanaBttn.swift in Sources */,
+				F0849C6020F2C13E0030CB26 /* Dot.swift in Sources */,
 				F02867381BED5A1B00BF3EC7 /* myVars.swift in Sources */,
 				F09B08FA1BE2C211003E5C30 /* AppDelegate.swift in Sources */,
 				F028673A1BED723800BF3EC7 /* PhonemeViewController.swift in Sources */,

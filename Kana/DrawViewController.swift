@@ -19,13 +19,23 @@ class DrawViewController: UIViewController {
     let red:CGFloat = 255
     let green:CGFloat = 255
     let blue:CGFloat = 255
+    
+    var stroke:CGFloat = 10.0
   
 //    override func viewDidLoad() {
 //
 //    }
+    func clear(){
+        self.drawView.image = nil
+        
+    }
     
+    @IBAction func clearView(_ sender: Any) {
+        self.drawView.image = nil
+    }
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         isSwiping    = false
+        stroke = 10.0
         if let touch = touches.first{
             lastPoint = touch.location(in: drawView)
         }
@@ -41,13 +51,16 @@ class DrawViewController: UIViewController {
             UIGraphicsGetCurrentContext()?.move(to: lastPoint)
             UIGraphicsGetCurrentContext()?.addLine(to: currentPoint)
             UIGraphicsGetCurrentContext()?.setLineCap(.round)
-            UIGraphicsGetCurrentContext()?.setLineWidth(9.0)
+            UIGraphicsGetCurrentContext()?.setLineWidth(stroke)
             UIGraphicsGetCurrentContext()?.setStrokeColor(red: red, green: green, blue: blue, alpha: red)
             UIGraphicsGetCurrentContext()?.strokePath()
             
             self.drawView.image = UIGraphicsGetImageFromCurrentImageContext()
             UIGraphicsEndImageContext()
             lastPoint = currentPoint
+            if (stroke > 1){
+                stroke -= 0.15
+            }
         }
     }
     
