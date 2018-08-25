@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		827C041721312BEA008998C0 /* PopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827C041621312BEA008998C0 /* PopUp.swift */; };
 		F02867381BED5A1B00BF3EC7 /* myVars.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02867371BED5A1B00BF3EC7 /* myVars.swift */; };
 		F028673A1BED723800BF3EC7 /* PhonemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02867391BED723800BF3EC7 /* PhonemeViewController.swift */; };
 		F030D23020D775C300DA18A1 /* Slt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F030D22D20D775BC00DA18A1 /* Slt.framework */; };
@@ -195,6 +196,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		827C041621312BEA008998C0 /* PopUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopUp.swift; sourceTree = "<group>"; };
 		F02867371BED5A1B00BF3EC7 /* myVars.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myVars.swift; sourceTree = "<group>"; };
 		F02867391BED723800BF3EC7 /* PhonemeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PhonemeViewController.swift; path = ../PhonemeViewController.swift; sourceTree = "<group>"; };
 		F030D22D20D775BC00DA18A1 /* Slt.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Slt.framework; sourceTree = "<group>"; };
@@ -458,6 +460,7 @@
 				F09B4B7C1C055C6F00FEF7AF /* prounonce.swift */,
 				F02867371BED5A1B00BF3EC7 /* myVars.swift */,
 				F09B0A781BE2D6C6003E5C30 /* kanaBttn.swift */,
+				827C041621312BEA008998C0 /* PopUp.swift */,
 				F030D23320DF528200DA18A1 /* DrawViewController.swift */,
 				F02867391BED723800BF3EC7 /* PhonemeViewController.swift */,
 				F09B09011BE2C211003E5C30 /* Main.storyboard */,
@@ -1000,6 +1003,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F030D23420DF528200DA18A1 /* DrawViewController.swift in Sources */,
+				827C041721312BEA008998C0 /* PopUp.swift in Sources */,
 				F09B4B7D1C055C6F00FEF7AF /* prounonce.swift in Sources */,
 				F0F6C1011BF728DC001BF952 /* events.swift in Sources */,
 				F0F6C0FD1BF55C8D001BF952 /* boomBox.swift in Sources */,
@@ -1144,7 +1148,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
-				SWIFT_OBJC_BRIDGING_HEADER = /Users/chrisphillips/Documents/TestGraph/Kana/Kana/Kana/Bridging_Header.h;
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/Grymm/Kana/Kana/Bridging_Header.h;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1195,7 +1199,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OBJC_BRIDGING_HEADER = /Users/chrisphillips/Documents/TestGraph/Kana/Kana/Kana/Bridging_Header.h;
+				SWIFT_OBJC_BRIDGING_HEADER = /Users/Grymm/Kana/Kana/Bridging_Header.h;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
